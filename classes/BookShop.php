@@ -3,9 +3,9 @@
 class BooksShop
 {
 
-    public $title;
-    public $sub_title;
-    public $author;
+    protected $title;
+    protected $sub_title;
+    protected $author;
     protected $price;
 
     public function __construct(string $title, string $sub_title, string $author, float $price)
@@ -14,6 +14,22 @@ class BooksShop
         $this->sub_title = $sub_title;
         $this->author = $author;
         $this->price = $price;
+    }
+    public function getTitle()
+    {
+        return $this->title;
+    }
+    public function getSubTitle()
+    {
+        return $this->sub_title;
+    }
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+    public function getPrice()
+    {
+        return $this->price;
     }
 }
 
