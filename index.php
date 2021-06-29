@@ -2,7 +2,7 @@
 require __DIR__ . '/classes/BookShop.php';
 include __DIR__ . '/classes/User.php';
 include __DIR__ . '/classes/VipUser.php';
-require __DIR__ . '/server/database.php';
+require __DIR__ . '/dataBase/db.php';
 
 // var_dump($normalEnglish, $laCanzoneDiAchille, $ilNervoVago);
 ?>
@@ -49,11 +49,6 @@ require __DIR__ . '/server/database.php';
         <?php endforeach; ?>
 
     </div>
-    </div>
-    </div>
-
-
-
 </body>
 
 </html>
